@@ -1,0 +1,170 @@
+/* Root Variables for Theme Customization */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #007bff;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Profile Card Styling */
+.profile-card {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--secondary-color);
+    transition: transform var(--transition);
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition);
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.job-title {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Section Styling */
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.section ul li strong {
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border-left: 5px solid var(--accent-color);
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.contact a:hover {
+    color: var(--primary-color);
+}
+
+/* Language Skills */
+.language-skills li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.language-skills li::before {
+    content: "★";
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        margin: 0 10px;
+    }
+}
