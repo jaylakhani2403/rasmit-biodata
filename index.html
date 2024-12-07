@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for demonstration */
+        :root {
+            --primary-color: #0078D7;
+            --secondary-color: #555;
+            --background-color: #f4f4f4;
+            --accent-color: #FFA500;
+            --text-color: #333;
+            --border-radius: 10px;
+            --transition: 0.3s ease-in-out;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            box-shadow: var(--box-shadow);
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        .profile-card {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .section ul, .section p {
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .contact p, .section ul li {
+            margin: 8px 0;
+        }
+
+        .emoji {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="photos.html" class="nav-link">📸 My Photos</a>
+ </nav>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="profile.jpg" alt="Rasmit Lakhani" class="profile-img">
+            <h1>🌟 RASMIT LAKHANI</h1>
+            <p class="job-title">🎨 Jacquard Designer</p>
+        </div>
+
+        <!-- Personal Details -->
+        <div class="section">
+            <h2>📝 Personal Details</h2>
+            <ul>
+                <li><span class="emoji">🎂</span><strong>Date of Birth:</strong> 10/12/2004</li>
+                <li><span class="emoji">📏</span><strong>Height:</strong> 5'4"</li>
+                <li><span class="emoji">⚖️</span><strong>Weight:</strong> 60 kg</li>
+                <li><span class="emoji">🌟</span><strong>Caste:</strong> Hindu (Lauva Patel)</li>
+                <li><span class="emoji">🌾</span><strong>Agricultural Land:</strong> 30 Vigha</li>
+            </ul>
+        </div>
+
+        <!-- Family Details -->
+        <div class="section">
+            <h2>👨‍👩‍👦 Family Details</h2>
+            <ul>
+                <li><span class="emoji">👨‍🌾</span><strong>Father:</strong> Lakhani Ashvinbhai Bhovanbhai (Farmer)</li>
+                <li><span class="emoji">👩‍👧</span><strong>Mother:</strong> Lakhani Harshaben Ashvinbhai (Housewife)</li>
+                <li><span class="emoji">👦</span><strong>Brother:</strong> Lakhani Jeet Ashvinbhai (Younger)</li>
+                <li><span class="emoji">🧑‍🤝‍🧑</span><strong>Maternal:</strong> Ramani Gopalbhai Dhanjibhai  (Chanaka)</li>
+                <!-- <li><span class="emoji">🏠</span><strong>Address:</strong> Chanaka, Ta:- Bhesan, Dist:- Junagadh</li> -->
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section contact" id="contact">
+            <h2>📞 Contact</h2>
+            <p><strong>📱 Self:</strong> +91 9313244312</p>
+            <p><strong>📱 Father:</strong> +91 9727580076</p>
+            <p><strong>📧 Email:</strong> <a href="mailto:rasmitlakhani95@gmail.com">rasmitlakhani95@gmail.com</a></p>
+            <p><strong>🏠 Address:</strong> Galath, Ta:- Bhesan, Dist:- Junagadh</p>
+        </div>
+
+        <!-- Language Skills -->
+        <div class="section">
+            <h2>🌐 Language Skills</h2>
+            <ul>
+                <li><span class="emoji">🇮🇳</span>Gujarati: ★★★★☆</li>
+                <li><span class="emoji">🇮🇳</span>Hindi: ★★★☆☆</li>
+                <li><span class="emoji">🇬🇧</span>English: ★★☆☆☆</li>
+            </ul>
+        </div>
+
+        <!-- Qualification Section -->
+        <div class="section">
+            <h2>🎓 Qualification</h2>
+            <p><span class="emoji">📚</span><strong>Education:</strong> F.Y B.Com</p>
+            <p><span class="emoji">🧵</span><strong>Occupation:</strong> Textile Designer</p>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="section">
+            <h2>✨ Interests</h2>
+            <p>🚗 Traveling, 📸 Photography, 📖 Reading</p>
+        </div>
+    </div>
+</body>
+</html>
